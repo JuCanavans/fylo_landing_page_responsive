@@ -1,0 +1,130 @@
+.section_access{
+    background-color: #575988;
+    padding: 3em 2em;
+}
+
+.access_description{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+    text-align: center;
+}
+
+.text_description{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    align-items: center;
+}
+
+.access_description h4{
+    color: #fafdff;
+    font-weight: 600;
+}
+
+.access_description p{
+    padding: 0 1.2em;
+    color: #c5c7df;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.access_inputs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+    align-items: flex-start;
+}
+
+.input_access{
+    height: 42px;
+    width: 240px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: #4c5182 0 7px 29px;
+}
+
+.input_access::placeholder{
+    padding-left: 0.8em;
+}
+
+
+.access_inputs .input{
+    width: 240px;
+    border-radius: 5px;
+    padding: 12px 0;
+    background-color: #2f65f9;
+    text-decoration: none;
+    color: #fcffff;
+    font-weight: bold;
+    font-size: 13px; 
+    box-shadow: #4c5182 0 7px 10px;
+}
+
+.input:hover{
+    background-color: #6b9bff;
+}
+
+.inputs_decoration{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#subs:invalid{
+    border: 1px solid red;
+}
+
+input[type="email"]:invalid + .alerta{
+    display: block;
+}
+
+.alerta{
+    width: 100%;
+    padding: 0.1em;
+    display: none;
+    text-align: left;
+    color: red;
+    border: none;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 700px){
+    .access_inputs{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 920px){
+    .section_access{
+        padding: 3em 8em;
+    }
+    .access_description{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .access_inputs{
+        flex-direction: column;
+    }
+    .input_access{
+        height: 42px;
+        width: 450px;
+        border-radius: 5px;
+        border: none;
+    }
+    .access_inputs a{
+        margin-right: 47%;
+    }
+    .text_description{
+        align-items: flex-start;
+        text-align: start;
+    }
+    .text_description p{
+        padding: 0%;
+    }
+    .access_description h4{
+        font-size: 22px;
+    }
+}

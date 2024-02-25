@@ -1,0 +1,149 @@
+.section-product-dad{
+    padding-top: 5em;
+}
+
+.product-img{
+    width: 80%;
+}
+
+.section-product-img{
+    background-image: url("../img/bg-curve-mobile.svg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100px;
+}
+
+.product-descrption{
+    padding: 2em 2.5em 2em 2.5em ;
+    background-color: #f9f8fe;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.8em;
+    align-items: center;
+}
+
+.text-coment-product{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5em;
+    align-items: center;
+}
+
+.text-coment-product h4{
+    color: #0a0740;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.text-coment-product p{
+    color: #727089;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.icon-decorarion{
+    display: inline-flex;
+    column-gap: 0.3em;
+    width: 150px;
+    border-bottom: 1px solid #3f9f8c;
+    padding-bottom: 0.2em;
+}
+
+.product-descrption a{
+    font-family: var(--font-family-secundario);
+    text-decoration: none;
+    color: #3f9f8c;
+    font-size: 14px;
+}
+
+.icon-decorarion:hover{
+    border-bottom: 1px solid #b3ded7;
+}
+
+.product-descrption a:hover{
+    color: #b3ded7;
+}
+
+.product-coment{
+    background-color: white;
+    max-width: 360px;
+    border-radius: 12px;
+    box-shadow: #64646f33 0 7px 29px;
+}
+
+.coment{
+    padding: 2em;
+}
+
+.icon{
+    display: flex;
+}
+
+.icon img{
+    width: 15px;
+    align-items: flex-end;
+    padding-bottom: 0.8em;
+}
+
+.section_avatar{
+    padding: 0 1.5em 1.5em 1.5em;
+    display: flex;
+    column-gap: 0.5em;
+}
+
+.section_avatar img{
+    width: 30px;
+    border-radius: 100%;
+}
+
+.description_name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.2em;
+}
+
+.description_name h3{
+    color: #0a0632;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.description_name span{
+    color: #0a0632;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 700px){
+    .product-img{
+        width: 35%;
+    }
+    .text-coment-product{
+        max-width: 520px;
+    }
+    .product-descrption{
+        text-align: center;
+    }
+    .text-coment-product h4{
+        font-size: 22px;
+    }
+    .section-product-img{
+        background-image: url("../img/bg-curve-desktop.svg");
+    }
+}
+
+@media screen and (min-width: 920px){
+    .product-descrption{
+        flex-direction: row-reverse;
+        padding: 2em 2.5em 4em 2.5em;
+        justify-content: space-around;
+    }
+    .text-coment-product{
+        text-align: start;
+        align-items: flex-start;
+        row-gap: 1.5em;
+    }
+}

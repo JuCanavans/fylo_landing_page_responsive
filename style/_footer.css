@@ -1,0 +1,83 @@
+
+footer{
+    background-color: #07043b;
+    padding: 3em 2em;
+}
+
+.footer_logo{
+    filter: invert(1);
+    width: 100px;
+}
+
+.footer_contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.access_inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list_link_contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5em;
+}
+
+.list_contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.list_contact .contact_fone_email{
+    display: inline-flex;
+    column-gap: 1em;
+    align-items: center;
+}
+
+.list_contact li{
+    list-style: none;
+}
+
+.list_contact li a{
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.list_links{
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5em;
+}
+
+.list_links li{
+    list-style: none;
+}
+
+.list_link_contact .list_contact li a:hover{
+    color: #6874b9;
+}
+
+.list_links li a img{
+    width: 30px;
+}
+
+@media screen and (min-width: 700px){
+    footer{
+        padding: 3em 8em;
+    }
+    .footer_contact{
+        row-gap: 0.8em;
+    }
+    .list_link_contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
